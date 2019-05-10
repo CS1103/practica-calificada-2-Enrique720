@@ -1,6 +1,3 @@
-//
-// Created by enrique.sobrados on 10/05/2019.
-//
 
 #ifndef EXAMEN_FIGHT_H
 #define EXAMEN_FIGHT_H
@@ -18,7 +15,10 @@ private:
 public:
     Fight( Fighter* peleador1, Fighter* peleador2);
     int get_score();
-    string get_winner();
+    string get_winner_name();
+    Fighter* get_peleador1();
+    Fighter* get_peleador2();
+    Fighter* get_winner();
 };
 
 
