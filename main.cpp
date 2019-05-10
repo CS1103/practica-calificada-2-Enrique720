@@ -38,5 +38,6 @@ int main() {
     assert(ataque3->attack() == 5);
     //cuando tienen dos defensas y dos atacques cada uno
     assert(pelea->get_score() == -5);
+    //comprobamos que el ganador es el segundo luchador
     assert(pelea->get_winner() == pelea->get_peleador2());
 }
