@@ -20,6 +20,17 @@ Fight::Fight(Fighter *peleador1, Fighter *peleador2): a{peleador1},b{peleador2}{
 int Fight::get_score() {
         return score;
 }
-string Fight::get_winner() {
+string Fight::get_winner_name() {
         return winner->get_name();
+}
+Fighter* Fight::get_peleador1() {
+    return a;
+}
+
+Fighter* Fight::get_peleador2() {
+    return b;
+}
+
+Fighter* Fight::get_winner() {
+    return winner;
 }
